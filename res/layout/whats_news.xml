@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/guide_bg"
+    >
+
+    <com.free.schedule.view.XyzGallery
+        android:id="@+id/what_news_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:unselectedAlpha="1.2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@null" >
+
+        <com.free.schedule.view.PageControlView
+            android:id="@+id/what_news_page_control"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:gravity="bottom|center" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mm_door"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FF000000"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popupBackground"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cancel"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/doctor_cap"
+                    android:tint="#3BC391" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColorHint="@color/popupTextHintColor"
+                    android:background="@drawable/editext"
+                    android:maxLength="18"
+                    android:textColor="@color/popupTextColor"
+                    android:hint="@string/classNameHint" >
+
+                    <requestFocus android:layout_width="match_parent" />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/place"
+                    android:tint="#44DEDE" />
+
+                <EditText
+                    android:id="@+id/place"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/popupTextColor"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/popupTextHintColor"
+                    android:ems="10"
+                    android:background="@drawable/editext"
+                    android:maxLength="18"
+                    android:hint="@string/placeHint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/teacher"
+                    android:tint="#8ECF3F" />
+
+                <EditText
+                    android:id="@+id/teacher"
+                    android:layout_width="0dip"
+                    android:textColor="@color/popupTextColor"
+                    android:textColorHint="@color/popupTextHintColor"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:background="@drawable/editext"
+                    android:maxLength="18"
+                    android:hint="@string/teacherHint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/noteImage"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/note0" />
+
+                <ToggleButton
+                    android:id="@+id/noteShow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/noteshow"
+                    android:textOff="@string/noteBook"
+                    android:gravity="left"
+                    android:textSize="@dimen/textSize"
+                    android:focusable="true"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/popupTextHintColor"
+                    android:textOn="@string/noteBook" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/cancel"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/close"
+        android:contentDescription="@null" />
+
+    <RadioGroup
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:gravity="center"
+        android:background="@drawable/note_part0"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio"
+            android:checked="true"
+            android:tag="0"
+            android:text="@string/note" />
+
+        <RadioButton
+            android:id="@+id/homework"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio"
+            android:tag="1"
+            android:text="@string/homework" />
+
+        <RadioButton
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio"
+            android:tag="2"
+            android:text="@string/other" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/type"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/type"
+        android:background="@drawable/note_part1"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/noteHint"
+        android:maxLines="10"
+        android:minLines="2"
+        android:scrollbarThumbVertical="@drawable/bar"
+        android:scrollbars="vertical"
+        android:textColor="@color/popupTextColor"
+        android:visibility="gone"
+        android:textColorHint="@color/popupTextHintColor" />
+
+    <Button
+        android:id="@+id/saveOrDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignRight="@+id/content"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/save"
+        android:text="@string/saveClass"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

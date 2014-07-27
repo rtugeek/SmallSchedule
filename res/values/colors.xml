@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="frameColor">#ff000000</color>
+    <color name="popupBackground">#F5F5F5</color>
+    <color name="popupTextHintColor">#BDBDBD</color>
+    <color name="popupTextColor">#5C5C5C</color>
+    <color name="relative_pressed">#555555</color>
+    <!-- umeng  -->
+    <color name="umeng_fb_color_btn_pressed">#1495F7</color>
+    <color name="umeng_fb_color_btn_normal">#333333</color>
+
+    
+</resources>
