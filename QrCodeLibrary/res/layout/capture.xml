@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.qy.commons.qrcode.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <TextView
+        android:id="@+id/status_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:background="@color/transparent"
+        android:text=""
+        android:textColor="@color/status_text" />
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="45dp" 
+        android:background="#FFBEC3C7" 
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip" >
+        <Button android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back" 
+            android:text="" 
+            android:textColor="@android:color/white"
+            android:textSize="16dip" />
+        
+        <TextView android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="扫一扫" 
+            android:textColor="@android:color/white"
+            android:textSize="20dip"/>
+        
+    </RelativeLayout>
+    
+    <CheckBox android:id="@+id/flash_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:button="@null"
+        android:background="@drawable/flash_btn" 
+        android:layout_marginBottom="16dip"/>
+</FrameLayout>
