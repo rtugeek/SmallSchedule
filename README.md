@@ -16,17 +16,16 @@ SmallSchedule
 
 参考：http://blog.csdn.net/hytfly/article/details/20064479
 
----------添加课程代码----------
-  ContentValues cv =new ContentValues();0x0D0A
-  cv.put("name", "吃饭");//课程名
-  cv.put("place", "食堂");//上课地点
-  cv.put("dayOfWeek", 0);//星期几的课 从0开始 0星期一 1星期二...
-  cv.put("startSection", 0);//第几节课开始  从0开始 0第一节 1第二节...
-  cv.put("endSection",0);//第几节课结束，如果只有一节则跟startSection相同
-  cv.put("teacher", "张老师");//任课老师
-  ClassManager classManager = new ClassManager(context);
-
-classManager.insertClass(cv);
+###添加课程代码
+    ContentValues cv =new ContentValues();0x0D0A
+    cv.put("name", "吃饭");//课程名
+    cv.put("place", "食堂");//上课地点
+    cv.put("dayOfWeek", 0);//星期几的课 从0开始 0星期一 1星期二...
+    cv.put("startSection", 0);//第几节课开始  从0开始 0第一节 1第二节...
+    cv.put("endSection",0);//第几节课结束，如果只有一节则跟startSection相同
+    cv.put("teacher", "张老师");//任课老师
+    ClassManager classManager = new ClassManager(context);
+    classManager.insertClass(cv);
 
 Mail : rtugeek@gmail.com
 QQ : 873037232
