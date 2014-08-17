@@ -7,6 +7,7 @@ SmallSchedule
 集成友盟社会化分享 反馈组件 （http://www.umeng.com/）
 
 集成百度第三方账号登陆 个人数据存储 （http://developer.baidu.com/services）
+如果有报错，或出现异常，请自行更新SDK
 
 集成Zxing二维码库 在项目QrCodeLibrary中
 
