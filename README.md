@@ -17,7 +17,7 @@ SmallSchedule
 参考：http://blog.csdn.net/hytfly/article/details/20064479
 
 ###添加课程代码
-    ContentValues cv =new ContentValues();0x0D0A
+    ContentValues cv =new ContentValues();
     cv.put("name", "吃饭");//课程名
     cv.put("place", "食堂");//上课地点
     cv.put("dayOfWeek", 0);//星期几的课 从0开始 0星期一 1星期二...
