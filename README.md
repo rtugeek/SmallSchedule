@@ -35,7 +35,7 @@ QQ : 873037232
 ![image](https://github.com/rtugeek/SmallSchedule/blob/master/Pic/2.png)![image](https://github.com/rtugeek/SmallSchedule/blob/master/Pic/3.png)
 
     DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-                     Version 2, December 2014
+             Version 2, December 2014
 
     Copyright (C) 2015 Fu WeiCheng <rtugeek@gmail.com>
 
